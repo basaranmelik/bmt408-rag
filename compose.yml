@@ -78,6 +78,7 @@ services:
       PGPASSWORD: ${DB_PASSWORD}
       PGDATABASE: ${DB_NAME}
       BACKUP_KEEP_DAYS: 7
+      TZ: Europe/Istanbul
     volumes:
       - backup_data:/backups
     depends_on:
